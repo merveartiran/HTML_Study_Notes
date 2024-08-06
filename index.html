@@ -2,9 +2,26 @@
 <html lang="en">
 
 <head>
+    <!-- dil karakterinde bozukluğu önlemek-->
     <meta charset="UTF-8">
+
+    <!-- Responsive Design-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- SEO -->
+    <title>Html5</title>
+    <meta name="author" content="Merve Artıran ">
+    <meta name="keyword" content="html5">
+    <meta name="description" content="html5 study notes">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/pexels-damian-apanasowicz-4185558.jpg" type="image/x-icon">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
         rel="stylesheet">
@@ -18,157 +35,340 @@
 <body>
     <!--eğer browser desteklemiyorsa ekranda hata verdirmek için noscript kullanılır.-->
     <noscript>your browser doesnt support javascript</noscript>
-
-
-    <!-- Whatsapp Link -->
-    <a href="https://wa.me/+90111222334455?Size nasıl yardmcı olabilirim ">Business Whatsapp Hattı !</a><br>
-
+    <!--favicon tarayıcı sekmesinde görünen küçük simge veya ikonudur.head tagı içinde link tagi ile eklenir.-->
+    <!--table-->
+    <table border="1" width="100%">
+        <colgroup>
+            <col span="1" style="background-color: lightgray;">
+            Database Table
+        </colgroup>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ADI</th>
+                <th>SOYADI</th>
+                <th>DATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adı 1</td>
+                <td>Soyadı 1</td>
+                <td>Date 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Adı 2</td>
+                <td>Soyadı 2</td>
+                <td>Date 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">&copy; Bütün haklar saklıdır</th><!--colspan 4 kolonu birleştirip 1 satır yapar-->
+            </tr>
+        </tfoot>
+    </table>
     <hr>
-    <!-- Google Font -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit accusamus quam. Esse sunt nobis quaerat
-        placeat id harum fugit. Mollitia quos reprehenderit ab vero doloribus fuga, assumenda nostrum quis.
-        Laborum exercitationem, fugit magnam nostrum rerum repellat? Maxime aliquam exercitationem quibusdam,
-        numquam
-        placeat possimus est quasi officiis, voluptas labore corrupti id. Expedita blanditiis placeat ab commodi
-        beatae,
-        deleniti vero voluptas.</p>
+    <br><br><br>
 
-    <!-- Emoji -->
-    <p>&#128042</p>
-    <p> &#128040</p>
-    <p>👨‍🎨</p>
-    <hr>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ADI</th>
+                <th>SOYADI</th>
+                <th>DATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adı</td>
+                <td>Soyadı</td>
+                <td>Date</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">&copy; Bütün haklar saklıdır</th><!--colspan 4 kolonu birleştirip 1 satır yapar-->
+            </tr>
+        </tfoot>
+    </table>
 
 
-
-
-
-    <!--a html de link oluşturmak yönlendirme yapmak için kullanılır-->
-    <hr><!-- link+image -->
-    <a href="https://www.pexels.com" target="_blank">
-        <img src="images/pexels-karolina-grabowska-5726064.jpg" alt="it isn't picture all here" width="50%" height="50%"
-            title="Çalışma"> <br>
-    </a><br>
-    <a href="https://fonts.google.com/specimen/Fira+Code">Fira Code</a><br>
-    <a href="https://www.miuul.com" target="_blank"></a><br> <!--Linki başka sayfada açar-->
-    <img src="images/pexels-damian-apanasowicz-4185558.jpg" width="400px" height="400px" alt="açıklama metni"
-        style="border: 2px solid darkblue;" title="resim başlığı">
-
-    <hr>
-    <hr>
-    <!--optional dropdown datalist  select ile bir dizi içerisinden seçim yapılır.Mıltiple özelliği ile çoklu seçim yapmak da mümkündür.-->
-    <select name="java" id="java" multiple>
-        <option value="0">seçiniz</option>
-        <option value="1">javase</option>
-        <option value="2">javame</option>
-    </select>
-    <hr>
-    <select name="miuul_frontend1" id="miuul_frontend1" multiple>
-        <option value="0">Seçiniz</option>
-        <option value="1">Html5</option>
-        <option value="2">Css3</option>
-        <option value="3">JS</option>
-        <option value="4">React JS</option>
-    </select>
-    <hr>
-    <!-- optional -->
-    <select name="miuul_frontend1" id="miuul_frontend1" multiple>
-        <option value="0">Seçiniz</option>
-        <option value="1">Html5</option>
-        <option value="2">Css3</option>
-        <option value="3">JS</option>
-        <option value="4">React JS</option>
-    </select>
-    <hr>
-    <!-- optional -->
-    <select name="miuul_frontend2" id="miuul_frontend2">
-        <option value="0">Seçiniz</option>
-        <option value="1">Html5</option>
-        <option value="2">Css3</option>
-        <option value="3">JS</option>
-        <option value="4">React JS</option>
-    </select>
-
-    <hr>
-    <!-- datalist -->
-    <input list="miuul_list" name="miuul_backend">
-    <datalist id="miuul_list" />
-    <option value="Java SE" />
-    <option value="Java EE" />
-    <option value="Web Servis" />
-    <option value="Spring Boot" />
-    </datalist>
-    <hr>
-
-    <!--Datalist elemanı bir giriş alanına önerilen seçenekleri sağlamak için kullanılır. Kullanıcı bir metin giriş alanına başladığında belirlenmiş seçenekleri içeren bir listeden seçim yapabilir. Otomatik tamalama işlevselliğini destekler-->
-    <input list="browser" name="browser">
-    <datalist id="browser">
-        <option value="internet explorer"></option>
-        <option value="mozilla"></option>
-        <option value="chrome"></option>
-    </datalist>
 
     <hr>
 
+    <!-- Audio -->
+    <audio width="100%" height="250" controls>
+        <source src="../xyz.mp3" type="audio/mp3">
+        <source src="../xyz.ogg" type="audio/ogg">
+    </audio>
 
-
-
-
-    <h1>heading</h1>
-    <h2>heading</h2>
-    <h3>heading</h3>
-    <h4>heading</h4>
-    <h5>heading</h5>
-    <h6>heading</h6>
     <hr>
-    <b>bold</b> <br>
-    <i>italic</i> <br>
-    <big>big</big><br>
-    <small>small</small><br>
-    <strong>strong</strong><br>
-    10<sup>5</sup> <br>
-    log <sub>2</sub>n<br>
-    <mark>fosforlu kalem</mark><br>
-    <code>print codes</code><br>
-    <del>1000 </del> TL 999 TL <br>
-    <u>important</u> <br>
-    <ins>altını çizmek</ins> <br>
-    <em>vurgulama</em> <br>
-    <b>
-        <i>
-            <mark>
-                <ins> javascript öğreniyorum</ins>
-            </mark>
-        </i>
-    </b>
+    <!-- video -->
+    <video width="100%" height="250" controls>
+        <source src="../xyz.mp4" type="video/mp4">
+        <source src="../xyz.ogg" type="video/ogg">
+    </video>
+
     <hr>
+    <!-- List -->
+    <!-- Tanımlı liste()Definition list -->
+    <!--dt derfinintion term tanım terimi-->
+    <!--dd definiton description tanım açıklaması-->
+    <dl>
+        <dt>Frontend</dt>
+        <dd>Html5</dd>
+        <dd>Css3</dd>
+
+        <br>
+        <dt>Backend</dt>
+        <dd>Java</dd>
+        <dd>Node js</dd>
+    </dl>
+    <hr>
+    <!-- Düzensiz liste(Unordered List) -->
+    <!-- ul>li{item - $}*4 -->
+    <ul>
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ul>
+
+    <hr>
+    <!-- Düzenli liste(Ordered List) -->
+    <!-- ol>li{item - $}*4 -->
+    <ol start="5" type="i">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="I">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="i">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="A">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+    <ol type="a">
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
+
+    <ol>
+        <li>item - 1</li>
+        <li>item - 2</li>
+        <li>item - 3</li>
+        <li>item - 4</li>
+    </ol>
 
 
 
-    <!-- paragraf -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut ut nemo soluta, labore sint blanditiis
-        rerum. Facere eos voluptates doloremque iure voluptate quod omnis, quae repellat eveniet, consequuntur
-        doloribus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta commodi earum! Eligendi quam quidem
-        odit assumenda, incidunt blanditiis magni aliquid facilis nisi eveniet? Aliquid ipsa eos aut natus consequatur!
-    </p>
-    <!--start codes-->
-    <hr> <!--it helps to draw long line-->
-    <br> <!--pass to the bottom line-->
-    <!--start semantic-->
-
-    <header>
-        <!--start header-->
-
-        <!--end header-->
-    </header>
-    <main></main>
-    <footer></footer>
-    <!--end semantic-->
 
 
 
-    <!--end codes-->
+
+
+
+
+    <!-- Iframe map tagi ile site içine map gömmek istediğimizde kullanılır.-->
+    <hr>
+    <div style="width: 100%">
+        <iframe width="100%" height="200" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=sweden+(My%20Dream%20City)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+    <hr>
+    <!--web sitesine doğru yönlendirme yapar site içerisinde site gösterir-->
+    <iframe src="https://www.pexels.com" width="100%" height="400" frameborder="1" scrolling="no" marginheight="0"
+        marginwidth="0">
+        <!-- Map -->
+        <div style="width: 100%">
+            <iframe width="50%" height="200" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=istanbul+(Miuul%20Map)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+        </div>
+        <hr>
+        <!-- Link -->
+        <a href="https://www.miuul.com" target="_blank">Miuul</a> <br>
+
+        <!-- email Link -->
+        <a href="mailto:xyz@com">Send Mail</a><br>
+
+        <!-- Telephone Link tıkladığında direk arama yapar -->
+        <a href="tel:+90111222334455">Call Me !</a><br>
+
+        <!-- Whatsapp Link direk whatsappa bağlanıp yazışma başlar-->
+        <a href="https://wa.me/+90111222334455?Size nasıl yardmcı olabilirim ">Business Whatsapp Hattı !</a><br>
+
+
+
+
+        <hr>
+        <!-- Google Font -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit accusamus quam. Esse sunt nobis quaerat
+            placeat id harum fugit. Mollitia quos reprehenderit ab vero doloribus fuga, assumenda nostrum quis.
+            Laborum exercitationem, fugit magnam nostrum rerum repellat? Maxime aliquam exercitationem quibusdam,
+            numquam
+            placeat possimus est quasi officiis, voluptas labore corrupti id. Expedita blanditiis placeat ab commodi
+            beatae,
+            deleniti vero voluptas.</p>
+
+        <!-- Emoji -->
+        <p>&#128042</p>
+        <p> &#128040</p>
+        <p>👨‍🎨</p>
+        <hr>
+
+
+
+
+
+        <!--a html de link oluşturmak yönlendirme yapmak için kullanılır-->
+        <hr><!-- link+image -->
+        <a href="https://www.pexels.com" target="_blank">
+            <img src="images/pexels-karolina-grabowska-5726064.jpg" alt="it isn't picture all here" width="50%"
+                height="50%" title="Çalışma"> <br>
+        </a><br>
+        <a href="https://fonts.google.com/specimen/Fira+Code">Fira Code</a><br>
+        <a href="https://www.miuul.com" target="_blank"></a><br> <!--Linki başka sayfada açar-->
+        <img src="images/pexels-damian-apanasowicz-4185558.jpg" width="400px" height="400px" alt="açıklama metni"
+            style="border: 2px solid darkblue;" title="resim başlığı">
+
+        <hr>
+        <hr>
+        <!--optional dropdown datalist  select ile bir dizi içerisinden seçim yapılır.Mıltiple özelliği ile çoklu seçim yapmak da mümkündür.-->
+        <select name="java" id="java" multiple>
+            <option value="0">seçiniz</option>
+            <option value="1">javase</option>
+            <option value="2">javame</option>
+        </select>
+        <hr>
+        <select name="miuul_frontend1" id="miuul_frontend1" multiple>
+            <option value="0">Seçiniz</option>
+            <option value="1">Html5</option>
+            <option value="2">Css3</option>
+            <option value="3">JS</option>
+            <option value="4">React JS</option>
+        </select>
+        <hr>
+        <!-- optional -->
+        <select name="miuul_frontend1" id="miuul_frontend1" multiple>
+            <option value="0">Seçiniz</option>
+            <option value="1">Html5</option>
+            <option value="2">Css3</option>
+            <option value="3">JS</option>
+            <option value="4">React JS</option>
+        </select>
+        <hr>
+        <!-- optional -->
+        <select name="miuul_frontend2" id="miuul_frontend2">
+            <option value="0">Seçiniz</option>
+            <option value="1">Html5</option>
+            <option value="2">Css3</option>
+            <option value="3">JS</option>
+            <option value="4">React JS</option>
+        </select>
+
+        <hr>
+        <!-- datalist -->
+        <input list="miuul_list" name="miuul_backend">
+        <datalist id="miuul_list" />
+        <option value="Java SE" />
+        <option value="Java EE" />
+        <option value="Web Servis" />
+        <option value="Spring Boot" />
+        </datalist>
+        <hr>
+
+        <!--Datalist elemanı bir giriş alanına önerilen seçenekleri sağlamak için kullanılır. Kullanıcı bir metin giriş alanına başladığında belirlenmiş seçenekleri içeren bir listeden seçim yapabilir. Otomatik tamalama işlevselliğini destekler-->
+        <input list="browser" name="browser">
+        <datalist id="browser">
+            <option value="internet explorer"></option>
+            <option value="mozilla"></option>
+            <option value="chrome"></option>
+        </datalist>
+
+        <hr>
+
+
+
+
+
+        <h1>heading</h1>
+        <h2>heading</h2>
+        <h3>heading</h3>
+        <h4>heading</h4>
+        <h5>heading</h5>
+        <h6>heading</h6>
+        <hr>
+        <b>bold</b> <br>
+        <i>italic</i> <br>
+        <big>big</big><br>
+        <small>small</small><br>
+        <strong>strong</strong><br>
+        10<sup>5</sup> <br>
+        log <sub>2</sub>n<br>
+        <mark>fosforlu kalem</mark><br>
+        <code>print codes</code><br>
+        <del>1000 </del> TL 999 TL <br>
+        <u>important</u> <br>
+        <ins>altını çizmek</ins> <br>
+        <em>vurgulama</em> <br>
+        <b>
+            <i>
+                <mark>
+                    <ins> javascript öğreniyorum</ins>
+                </mark>
+            </i>
+        </b>
+        <hr>
+
+
+
+        <!-- paragraf -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut ut nemo soluta, labore sint
+            blanditiis
+            rerum. Facere eos voluptates doloremque iure voluptate quod omnis, quae repellat eveniet, consequuntur
+            doloribus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta commodi earum! Eligendi quam quidem
+            odit assumenda, incidunt blanditiis magni aliquid facilis nisi eveniet? Aliquid ipsa eos aut natus
+            consequatur!
+        </p>
+        <!--start codes-->
+        <hr> <!--it helps to draw long line-->
+        <br> <!--pass to the bottom line-->
+        <!--start semantic-->
+
+        <header>
+            <!--start header-->
+
+            <!--end header-->
+        </header>
+        <main></main>
+        <footer></footer>
+        <!--end semantic-->
+
+
+
+        <!--end codes-->
 </body>
 
 </html>
